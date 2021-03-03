@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+/* tslint:disable:no-trailing-whitespace */
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+  name: string;
+
+  onNameChange(value): void {
+    this.name = value;
+  }
 }
