@@ -8,8 +8,13 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   name: string;
+  date: string;
 
   onNameChange(value): void {
     this.name = value;
+  }
+
+  onDateChange(value): void {
+    this.date = value;
   }
 }
